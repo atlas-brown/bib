@@ -1,2 +1,6 @@
 *.tex
 *.pdf
+*.aux
+*.bbl
+*.blg
+*.log

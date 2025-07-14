@@ -3,7 +3,7 @@ Eliminate abstract, "In Proceedings of ", and ensure URL
 ## Publications
 
 @inproceedings{fractal:nsdi:2026,
- author = { Zhicheng Huang, Ramiz Dundar, Yizheng Xie, Konstantinos Kallas, Nikos Vasilakis},
+ author = {Zhicheng Huang and Ramiz Dundar and Yizheng Xie and Konstantinos Kallas and Nikos Vasilakis},
  title = {Fractal: Fault-Tolerant Shell-Script Distribution},
  booktitle = {23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI 26)},
  year = {2026},
@@ -13,7 +13,7 @@ Eliminate abstract, "In Proceedings of ", and ensure URL
 }
 
 @inproceedings{slowpoke:nsdi:2026,
- author = {Yizheng Xie, Di Jin, Oğuzhan Çölkesen, Vasiliki Kalavri, John Liagouris, Nikos Vasilakis},
+ author = {Yizheng Xie and Di Jin and Oğuzhan Çölkesen and Vasiliki Kalavri and John Liagouris and Nikos Vasilakis},
  title = {Slowpoke: End-to-end Throughput Optimization Modeling for Microservice Applications},
  booktitle = {23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI 26)},
  year = {2026},
@@ -39,7 +39,7 @@ Eliminate abstract, "In Proceedings of ", and ensure URL
 
 #### From Ahead-of- to Just-in-Time and Back Again: Static Analysis for Unix Shell Programs
 
-@inproceedings{10.1145/3713082.3730395,
+@inproceedings{sash:hotos:2025,
 author = {Lazarek, Lukas and Jung, Seong-Heon and Lamprou, Evangelos and Li, Zekai and Narsipur, Anirudh and Zhao, Eric and Greenberg, Michael and Kallas, Konstantinos and Mamouras, Konstantinos and Vasilakis, Nikos},
 title = {From Ahead-of- to Just-in-Time and Back Again: Static Analysis for Unix Shell Programs},
 year = {2025},
@@ -253,20 +253,21 @@ series = {HotOS '23}
 
 @inproceedings{pash:icfp:2021,
  author = {Handa, Shivam and Kallas, Konstantinos and Vasilakis, Nikos and Rinard, Martin C.},
- title = {An Order-Aware Dataflow Model for Parallel Unix Pipelines},
+ title = {An order-aware dataflow model for parallel Unix pipelines},
  year = {2021},
  issue_date = {August 2021},
  publisher = {Association for Computing Machinery},
  address = {New York, NY, USA},
- volume = {5},
- number = {ICFP},
+% volume = {5},
+% number = {ICFP},
  url = {https://doi.org/10.1145/3473570},
  doi = {10.1145/3473570},
  journal = {Proc. ACM Program. Lang.},
- month = {aug},
+ booktitle = {International Conference on Functional Programming},
+ month = aug,
  articleno = {65},
  numpages = {28},
- keywords = {Parallelism, Dataflow, Order-awareness, Shell, Unix, POSIX}
+ keywords = {Dataflow, Order-awareness, POSIX, Parallelism, Shell, Unix}
 }
 
 #### Unix Shell Programming: The Next 50 Years
@@ -617,7 +618,7 @@ series = {CCS '21}
 
 #### Report on the "The Future of the Shell" Panel at HotOS 2021
 
-@article{shellpanel:report:2021,
+@inproceedings{shellpanel:report:2021,
   author = {Michael Greenberg and Konstantinos Kallas and Nikos Vasilakis and Stephen Kell},
   title = {Report on the "The Future of the Shell" Panel at HotOS 2021},
   journal = {CoRR},
