@@ -58,6 +58,42 @@ location = {Toronto, Ontario, Canada},
 series = {PACT '08}
 }
 
+@article{10.1145/170036.170042,
+author = {Leutenegger, Scott T. and Dias, Daniel},
+title = {A modeling study of the TPC-C benchmark},
+year = {1993},
+issue_date = {June 1, 1993},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {22},
+number = {2},
+issn = {0163-5808},
+url = {https://doi.org/10.1145/170036.170042},
+doi = {10.1145/170036.170042},
+abstract = {The TPC-C benchmark is a new benchmark approved by the TPC council intended for comparing database platforms running a medium complexity transaction processing workload. Some key aspects in which this new benchmark differs from the TPC-A benchmark are in having several transaction types, some of which are more complex than that in TPC-A, and in having data access skew. In this paper we present results from a modelling study of the TPC-C benchmark for both single node and distributed database management systems. We simulate the TPC-C workload to determine expected buffer miss rates assuming an LRU buffer management policy. These miss rates are then used as inputs to a throughput model. From these models we show the following: (i) We quantify the data access skew as specified in the benchmark and show what fraction of the accesses go to what fraction of the data. (ii) We quantify the resulting buffer hit ratios for each relation as a function of buffer size. (iii) We show that close to linear scale-up (about 3\% from the ideal) can be achieved in a distributed system, assuming replication of a read-only table. (iv) We examine the effect of packing hot tuples into pages and show that significant price/performance benefit can be thus achieved. (v) Finally, by coupling the buffer simulations with the throughput model, we examine typical disk/memory configurations that maximize the overall price/performance.},
+journal = {SIGMOD Rec.},
+month = jun,
+pages = {22–31},
+numpages = {10}
+}
+
+@inproceedings{tpc:sigmod:1993,
+author = {Leutenegger, Scott T. and Dias, Daniel},
+title = {A modeling study of the TPC-C benchmark},
+year = {1993},
+isbn = {0897915925},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/170035.170042},
+doi = {10.1145/170035.170042},
+booktitle = {Proceedings of the 1993 ACM SIGMOD International Conference on Management of Data},
+pages = {22–31},
+numpages = {10},
+location = {Washington, D.C., USA},
+series = {SIGMOD '93}
+}
+
+
 @inproceedings{fusion:cidr:2022,
   author        = {{Anna Herlihy and Periklis Chrysogelos and Anastasia Ailamaki}},
   title         = {{Boosting Efficiency of External Pipelines by Blurring Application Boundaries}},
@@ -79,7 +115,6 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3491084.3491426},
 doi = {10.1145/3491084.3491426},
-abstract = {Serverless computing is a recent paradigm to program the cloud. It allows to execute user-defined functions at scale, on demand, and in a pay-per-use manner. This paper reports on adapting the Unix shell for serverless. Our software, called the serverless shell (sshell), runs shell scripts on a serverless platform much like with a regular computer. It permits to reuse an existing code base while benefiting from the massive power of serverless and paying only for the resources used. sshell is built around a small set of components that includes a new inter-process communication layer for serverless. We evaluate it in AWS Lambda using several microbenchmarks and a large-scale application. Our results show that sshell achieves comparable or better performance than a high-end server. Moreover, it can be faster and more cost-efficient than a cluster-based solution to mine large datasets.},
 booktitle = {Proceedings of the 22nd International Middleware Conference: Industrial Track},
 pages = {9–15},
 numpages = {7},
@@ -314,3 +349,147 @@ keywords = {application security, binary analysis, binary rewriting, recompilati
 location = {Lausanne, Switzerland},
 series = {ASPLOS '20}
 }
+
+@inproceedings{bach:atc:2020,
+ author = {Yuan, Gina and Palkar, Shoumik and Narayanan, Deepak and Zaharia, Matei},
+ title = {Offload annotations: bringing heterogeneous computing to existing libraries and workloads},
+ year = {2020},
+ isbn = {978-1-939133-14-4},
+ publisher = {USENIX Association},
+ address = {USA},
+ booktitle = {Proceedings of the 2020 USENIX Conference on Usenix Annual Technical Conference},
+ articleno = {20},
+ numpages = {14},
+ series = {USENIX ATC'20}
+}
+
+@inproceedings {stack:atc:2002,
+ author = {Atul Adya and Jon Howell and Marvin Theimer and Bill Bolosky and John Douceur},
+ title = {Cooperative Task Management Without Manual Stack Management},
+ booktitle = {2002 USENIX Annual Technical Conference (USENIX ATC'02)},
+ year = {2002},
+ address = {Monterey, CA},
+ url = {https://www.usenix.org/conference/2002-usenix-annual-technical-conference/cooperative-task-management-without-manual-stack},
+ publisher = {USENIX Association},
+ month = jun
+}
+
+@inproceedings {mbox:atc:2013,
+ author = {Taesoo Kim and Nickolai Zeldovich},
+ title = {Practical and Effective Sandboxing for Non-root Users},
+ booktitle = {2013 USENIX Annual Technical Conference (USENIX ATC'13)},
+ year = {2013},
+ isbn = {978-1-931971-01-0},
+ address = {San Jose, CA},
+ pages = {139--144},
+ url = {https://www.usenix.org/conference/atc13/technical-sessions/presentation/kim},
+ publisher = {USENIX Association},
+ month = jun
+}
+
+@inproceedings{enclosure:asplos:2021,
+ author = {Ghosn, Adrien and Kogias, Marios and Payer, Mathias and Larus, James R. and Bugnion, Edouard},
+ title = {Enclosure: language-based restriction of untrusted libraries},
+ year = {2021},
+ isbn = {9781450383172},
+ publisher = {Association for Computing Machinery},
+ address = {New York, NY, USA},
+ url = {https://doi.org/10.1145/3445814.3446728},
+ doi = {10.1145/3445814.3446728},
+ booktitle = {Proceedings of the 26th ACM International Conference on Architectural Support for Programming Languages and Operating Systems},
+ pages = {255–267},
+ numpages = {13},
+ keywords = {software packages, programming languages, intra-address space isolation, Security},
+ location = {Virtual, USA},
+ series = {ASPLOS '21}
+}
+
+@inproceedings{gg:atc:2019,
+ author = {Sadjad Fouladi and Francisco Romero and Dan Iter and Qian Li and Shuvo Chatterjee and Christos Kozyrakis and Matei Zaharia and Keith Winstein},
+ title = {From Laptop to Lambda: Outsourcing Everyday Jobs to Thousands of Transient Functional Containers},
+ booktitle = {2019 USENIX Annual Technical Conference (USENIX ATC 19)},
+ year = {2019},
+ isbn = {978-1-939133-03-8},
+ address = {Renton, WA},
+ pages = {475--488},
+ url = {http://www.usenix.org/conference/atc19/presentation/fouladi},
+ publisher = {USENIX Association},
+ month = jul
+}
+
+@inproceedings {cowl:osdi:2014,
+ author = {Deian Stefan and Edward Z. Yang and Petr Marchenko and Alejandro Russo and Dave Herman and Brad Karp and David Mazi{\`e}res},
+ title = {Protecting Users by Confining {JavaScript} with {COWL}},
+ booktitle = {11th USENIX Symposium on Operating Systems Design and Implementation (OSDI 14)},
+ year = {2014},
+ isbn = { 978-1-931971-16-4},
+ address = {Broomfield, CO},
+ pages = {131--146},
+ url = {https://www.usenix.org/conference/osdi14/technical-sessions/presentation/stefan},
+ publisher = {USENIX Association},
+ month = oct
+}
+
+@inproceedings {rlbox:usenix:2020,
+ author = {Shravan Narayan and Craig Disselkoen and Tal Garfinkel and Nathan Froyd and Eric Rahm and Sorin Lerner and Hovav Shacham and Deian Stefan},
+ title = {Retrofitting Fine Grain Isolation in the Firefox Renderer},
+ booktitle = {29th USENIX Security Symposium (USENIX Security 20)},
+ year = {2020},
+ isbn = {978-1-939133-17-5},
+ pages = {699--716},
+ url = {https://www.usenix.org/conference/usenixsecurity20/presentation/narayan},
+ publisher = {USENIX Association},
+ month = aug
+}
+
+@article{10.1145/323627.323635,
+author = {Cooper, Eric C.},
+title = {Replicated distributed programs},
+year = {1985},
+issue_date = {Dec. 1-4, 1985},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {19},
+number = {5},
+issn = {0163-5980},
+url = {https://doi.org/10.1145/323627.323635},
+doi = {10.1145/323627.323635},
+journal = {SIGOPS Oper. Syst. Rev.},
+month = dec,
+pages = {63–78},
+numpages = {16}
+}
+
+@inproceedings{troupes:sosp:1985,
+author = {Cooper, Eric C.},
+title = {Replicated distributed programs},
+year = {1985},
+isbn = {0897911741},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/323647.323635},
+doi = {10.1145/323647.323635},
+booktitle = {Proceedings of the Tenth ACM Symposium on Operating Systems Principles},
+pages = {63–78},
+numpages = {16},
+location = {Orcas Island, Washington, USA},
+series = {SOSP '85}
+}
+
+@inproceedings{isis:sosp:1985,
+author = {Birman, Kenneth P.},
+title = {Replication and fault-tolerance in the ISIS system},
+year = {1985},
+isbn = {0897911741},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/323647.323636},
+doi = {10.1145/323647.323636},
+booktitle = {Proceedings of the Tenth ACM Symposium on Operating Systems Principles},
+pages = {79–86},
+numpages = {8},
+location = {Orcas Island, Washington, USA},
+series = {SOSP '85}
+}
+
+
