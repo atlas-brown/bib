@@ -12,7 +12,7 @@ cat <<-EOM >> draft.tex
 	 
 	 { \footnotesize
 	   \bibliographystyle{plain}
-	   \bibliography{atlas}
+	   \bibliography{atlas,other}
 	 }
 	\end{document}
 EOM
