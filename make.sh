@@ -6,7 +6,7 @@ cat <<-EOM > draft.tex
 	Some citations
 EOM
 
-cat atlas.bib | grep '@.*{.*,'  | sed 's/@inproceedings{//' | sed 's/@inbook{//' | sed 's/@phdthesis{//' | sed 's/@misc{//' | sed 's/@mastersthesis{//' | tr '\n' ' ' | sed 's/,[[:space:]]*$/}/' | sed 's/^/\\cite{/' >> draft.tex
+cat atlas.bib | grep '@.*{.*,' | sed 's/@inproceedings{//' | sed 's/@inbook{//' | sed 's/@phdthesis{//' | sed 's/@misc{//' | sed 's/@mastersthesis{//' | tr '\n' ' ' | sed 's/,[[:space:]]*$/}/' | sed 's/^/\\cite{/' >> draft.tex
 
 cat <<-EOM >> draft.tex
 	 
@@ -21,4 +21,3 @@ cat draft.tex
 
 pdflatex draft.tex
 bibtex draft
-
