@@ -20,5 +20,5 @@ EOM
 
 cat draft.tex
 
-pdflatex draft.tex
+xelatex draft.tex
 bibtex draft
