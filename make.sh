@@ -2,6 +2,7 @@
 
 cat <<-EOM > draft.tex
 	\documentclass{article}
+	\usepackage{url}
 	\begin{document}
 	Some citations
 EOM
