@@ -12,6 +12,7 @@ bibtex-tidy ./*.bib \
 						--no-strip-comments \
 						--numeric           \
 						--months            \
+						--curly             \
 						--sort-fields       \
 						--duplicates        \
 						--blank-lines       \
