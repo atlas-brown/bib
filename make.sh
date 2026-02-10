@@ -10,7 +10,6 @@ EOM
 bibtex-tidy ./*.bib \
 						--no-escape         \
 						--no-strip-comments \
-						--numeric           \
 						--months            \
 						--curly             \
 						--sort-fields       \
