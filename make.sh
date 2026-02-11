@@ -17,7 +17,7 @@ bibtex-tidy ./*.bib \
 						--blank-lines       \
 						--modify
 
-cat ./*.bib | grep '@.*{.*,' | sed 's/@article{//' | sed 's/@inproceedings{//' | sed 's/@book{//' | sed 's/@inbook{//' | sed 's/@phdthesis{//' | sed 's/@misc{//' | sed 's/@mastersthesis{//' | sed 's/@techreport{//' | tr '\n' ' ' | sed 's/,[[:space:]]*$/}/' | sed 's/^/\\cite{/' >> draft.tex
+cat ./*.bib | grep '@.*{.*,' | sed 's/@article{//' | sed 's/@inproceedings{//' | sed 's/@book{//' | sed 's/@inbook{//' | sed 's/@phdthesis{//' | sed 's/@misc{//' | sed 's/@mastersthesis{//' | sed 's/@techreport{//' | sed 's/@preprint{//' | tr '\n' ' ' | sed 's/,[[:space:]]*$/}/' | sed 's/^/\\cite{/' >> draft.tex
 
 cat <<-EOM >> draft.tex
 	 
