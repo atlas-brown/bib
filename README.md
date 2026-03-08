@@ -3,6 +3,7 @@
 This is a repo with all of our papers, theses, journals, press articles, etc.
 
 * `atlas.bib` contains papers from the [Atlas group](https://atlas.cs.brown.edu) and is the authoritative source.
+* `theses.bib` contains thesis entries from the group.
 * `other.bib` contains other papers that are useful to the group.
 
 If you are a student in the group you do **not** need to import anything else to have access to all papers published by the group—use other `bibtex` files for other literature (and ask your collaorators to do so too).

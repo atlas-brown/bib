@@ -23,7 +23,7 @@ cat <<-EOM >> draft.tex
 	 
 	 { \footnotesize
 	   \bibliographystyle{plain}
-	   \bibliography{atlas,other}
+	   \bibliography{atlas,other,theses}
 	 }
 	\end{document}
 EOM
