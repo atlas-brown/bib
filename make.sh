@@ -32,3 +32,5 @@ cat draft.tex
 
 xelatex draft.tex
 bibtex draft
+xelatex draft.tex
+xelatex draft.tex
