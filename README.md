@@ -13,6 +13,7 @@ If you are a student in the group you do **not** need to import anything else to
 In addition to standard BibTeX fields, this repository also uses:
 
 * `tags`: a comma-separated list of topic labels for the entry; these could be [Brown Systems projects](https://atlas.cs.brown.edu/KtbxLzFvRgzPLQTVqWjTslGNMtkHCvzbDB/systems-at-brown/projects/index.html) (eg `optimization`) or group-internal information (e.g., `security`)
+* `award`: a comma-separated list of awards or honors the work has received; use the conference's official title where possible (e.g., `Best Paper Award`)
 * `artifact`: a URL to the paper's associated artifact, especially in cases when the paper received artifact badges—for example: GitHub URL or web page describing code, benchmarks, online appendix, or any other information.
 * `pdf`: a URL to the paper's PDF (for example on a personal or lab server); we typically use the bibtex entry's key (`system:conf:full-year`, see below) as the local PDF name (PDFs are not checked into this repo).
 
@@ -26,6 +27,7 @@ Example:
   booktitle     = {Example Conference},
   url           = {https://example.org/paper},
   pdf           = {https://people.example.edu/~author/example-paper.pdf},
+  award         = {Best Paper Award},
   artifact      = {https://github.com/example/project},
   tags          = {performance, security, correctness}
 }
