@@ -8,6 +8,13 @@ This is a repo with all of our papers, theses, journals, press articles, etc.
 
 If you are a student in the group you do **not** need to import anything else to have access to all papers published by the group—use other `bibtex` files for other literature (and ask your collaorators to do so too).
 
+_To import this repo as a submodule to your project:_
+
+```
+git submodule add git@github.com:atlas-brown/bib.git bib
+git commit -m "add bib submodule" && git push
+```
+
 ## Optional extra fields
 
 In addition to standard BibTeX fields, this repository also uses:
